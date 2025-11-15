@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta SEO -->
+    <meta
+      name="description"
+      content="Info Smart menyajikan spesifikasi gadget terbaru, kelebihan dan kekurangan perangkat, review singkat, serta update perkembangan teknologi terkini. Informasi lengkap, ringkas, dan mudah dipahami."
+    />
+    <meta
+      name="description"
+      content="Temukan spesifikasi gadget terbaru, perbandingan perangkat, serta ulasan objektif mengenai kelebihan dan kekurangan. Info Smart memberikan informasi teknologi yang akurat dan up-to-date."
+    />
+    <meta
+      name="description"
+      content="Info Smart menyediakan informasi lengkap tentang teknologi, gadget terbaru, fitur, performa, dan berita teknologi yang selalu diperbarui."
+    />
+    <meta
+      name="keywords"
+      content="gadget terbaru, spesifikasi hp, info teknologi, review gadget, kelebihan dan kekurangan, berita teknologi hari ini, spesifikasi lengkap, teknologi terbaru 2025, info gadget, harga dan spesifikasi, smartphone terbaru, update teknologi, perbandingan gadget
+"
+    />
+    <meta name="author" content="Info Smart" />
+    <!--  -->
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Info Smart — Spesifikasi Gadget & Informasi Teknologi Terbaru"
+    />
+    <meta
+      property="og:description"
+      content="Dapatkan spesifikasi gadget terbaru, kelebihan dan kekurangan, review singkat, serta berita teknologi yang selalu diperbarui."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://infosmart.com/" />
+    <!-- ganti dengan domain kamu -->
+    <meta
+      property="og:image"
+      content="https://infosmart.com/images/thumbnail.jpg"
+    />
+    <!-- ganti thumbnail -->
+    <meta property="og:site_name" content="Info Smart" />
+
+    <!-- Untuk WhatsApp, Instagram, Facebook -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Info Smart — Spesifikasi Gadget & Informasi Teknologi Terbaru"
+    />
+    <meta
+      name="twitter:description"
+      content="Informasi gadget terbaru, spesifikasi lengkap, kelebihan & kekurangan, serta update teknologi terlengkap."
+    />
+    <meta
+      name="twitter:image"
+      content="https://infosmart.com/images/thumbnail.jpg"
+    />
+
+    <!--  -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Info Smart</title>
+    <style>
+      html {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="bg-gradient-primary shadow-lg fixed top-0 right-0 left-0 z-50"
+    >
+      <nav class="container mx-auto relative">
+        <div class="flex items-center justify-between px-7 py-3 relative">
+          <h1
+            onclick="location.href=`/src/`"
+            class="font-semibold md:text-2xl text-xl text-white cursor-pointer"
+          >
+            <span class="hover:text-gray-800">I</span>
+            <span class="hover:text-gray-800">N</span>
+            <span class="hover:text-gray-800">F</span>
+            <span class="hover:text-gray-800">O</span>
+            <span class="hover:text-gray-800"> S</span>
+            <span class="hover:text-gray-800">M</span>
+            <span class="hover:text-gray-800">A</span>
+            <span class="hover:text-gray-800">R</span>
+            <span class="hover:text-gray-800">T</span>
+          </h1>
+          <button id="btn" class="transition-all duration-200">
+            <i
+              id="menu-logo"
+              class="fa-solid fa-bars text-white md:text-2xl text-xl transition-all duration-200 hover:text-gray-800"
+            ></i>
+          </button>
+        </div>
+        <div
+          class="px-3 md:px-7 flex justify-between pb-3 absolute top-0 left-0 right-0 z-30 mt-16 w-full rounded-md shadow-lg bg-white"
+        >
+          <div>
+            <p
+              id="tanggal"
+              class="text-[13px] md:text-[15px] lg:text-[17px] md:font-medium pt-2"
+            ></p>
+          </div>
+          <div>
+            <p
+              id="jam"
+              class="text-[13px] md:text-[15px] lg:text-[17px] md:font-medium pt-2"
+            ></p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- SIDEBAR -->
+      <section
+        id="sidebar"
+        class="fixed bg-gray-100 h-full w-60 top-28 rounded-lg right-0 transform -scale-x-0 transition-all duration-300 origin-right z-30 shadow-2xl"
+      >
+        <div class="w-full h-full flex pt-16 justify-center">
+          <ul class="flex flex-col gap-3 text-gray-800 uppercase font-semibold">
+            <a
+              href="#home"
+              class="hover:text-blue-700 hover:underline delay-100"
+              >profile</a
+            >
+            <a
+              href="#produk"
+              class="hover:text-blue-700 hover:underline delay-100"
+              >produk</a
+            >
+            <a
+              href="#blog"
+              class="hover:text-blue-700 hover:underline delay-100"
+              >blog</a
+            >
+            <a
+              href="#about"
+              class="hover:text-blue-700 hover:underline delay-100"
+              >about</a
+            >
+            <a
+              href="#contact"
+              class="hover:text-blue-700 hover:underline delay-100"
+              >contact</a
+            >
+            <a
+              href="kebijakan-privasi.html"
+              class="hover:text-blue-700 hover:underline delay-100"
+              >kebijakan privasi</a
+            >
+          </ul>
+        </div>
+      </section>
+      <section class="w-full max-w-3xl mx-auto mt-24" id="home">
+        <div class="my-slider">
+          <div class="p-5">
+            <img
+              src="img/slideshow.png"
+              class="w-full h-72 object-cover rounded-xl"
+            />
+          </div>
+          <div class="p-5">
+            <img
+              src="img/slideshow.png"
+              class="w-full h-72 object-cover rounded-xl"
+            />
+          </div>
+          <div class="p-5">
+            <img
+              src="img/slideshow.png"
+              class="w-full h-72 object-cover rounded-xl"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="mt-6">
+        <div class="px-7">
+          <h1 class="font-bold py-2 text-gray-800 text-2xl">
+            Semua Tentang Teknologi dalam Satu Tempat
+          </h1>
+          <h2 class="font-semibold text-gray-800">
+            1. Spesifikasi Gadget Lengkap & Jelas
+          </h2>
+          <p
+            class="text-[13px] md:text-[15px] text-gray-600 [text-align:justify] leading-relaxed mb-4"
+          >
+            Info Smart menyajikan detail spesifikasi dari berbagai perangkat
+            terbaru seperti smartphone, laptop, smartwatch, dan perangkat
+            teknologi lainnya. Semua informasi disusun dengan rapi agar kamu
+            bisa langsung melihat performa, fitur utama, serta teknologi yang
+            digunakan tanpa perlu mencari ke banyak situs lain.
+          </p>
+          <h2 class="font-semibold py-2 text-gray-800">
+            2. Update Informasi Teknologi Terbaru
+          </h2>
+          <p
+            class="text-[13px] md:text-[15px] text-gray-600 [text-align:justify] leading-relaxed mb-4"
+          >
+            Kami selalu menghadirkan berita dan perkembangan terbaru di dunia
+            teknologi. Mulai dari perilisan produk baru, inovasi menarik, tren
+            industri, hingga bocoran fitur perangkat yang akan datang. Semua
+            disajikan secara ringkas dan mudah dipahami agar kamu tetap
+            up-to-date setiap hari.
+          </p>
+          <h2 class="font-semibold py-2 text-gray-800">
+            3. Ulasan Secara Objektif
+          </h2>
+          <p
+            class="text-[13px] md:text-[15px] text-gray-600 [text-align:justify] leading-relaxed mb-4"
+          >
+            Sebelum membeli sebuah perangkat, kamu bisa membaca analisis
+            kelebihan dan kekurangannya langsung di Info Smart. Ulasan dibuat
+            objektif berdasarkan fakta, sehingga kamu bisa mempertimbangkan
+            apakah sebuah gadget benar-benar sesuai dengan kebutuhanmu. Dengan
+            begitu, keputusan pembelian jadi lebih cerdas dan tepat.
+          </p>
+        </div>
+      </section>
+
+      <!-- search produk -->
+      <section id="produk" class="bg-gray-100 mt-7 pt-7 pb-7">
+        <div class="select-none">
+          <h1
+            class="text-center font-bold md:text-3xl text-[18px] text-gray-800"
+          >
+            CARI PRODUK
+          </h1>
+
+          <div class="w-full max-w-md mx-auto mt-4">
+            <div class="relative">
+              <input
+                id="search"
+                type="text"
+                placeholder="Cari sesuatu..."
+                class="w-full pl-12 pr-4 py-3 rounded-2xl shadow-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition bg-white placeholder-gray-400"
+              />
+              <svg
+                class="w-5 h-5 text-gray-800 absolute left-4 top-1/2 -translate-y-1/2"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1010.5 18a7.5 7.5 0 006.15-3.35z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            id="scp"
+            class="h-72 px-5 mt-5 md:mt-7 flex space-x-4 overflow-x-auto scrollbar-hide pb-4"
+          >
+            <!-- Populer 1 -->
+            <!-- //////// -->
+
+            <!-- Populer 1 -->
+          </div>
+        </div>
+      </section>
+      <!-- search produk end -->
+
+      <!-- blog -->
+      <section class="w-full py-6 mt-2">
+        <h2 class="text-xl font-semibold mb-4 px-2 uppercase text-center">
+          Cuplikan Blog Terbaru
+        </h2>
+
+        <div class="flex overflow-x-auto gap-4 px-2 pb-4">
+          <!-- CARD BLOG -->
+          <div
+            class="flex-none w-[220px] bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition"
+          >
+            <div class="h-36">
+              <img
+                src="img/aboutme.jpeg"
+                alt="Blog Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="p-3">
+              <h3 class="font-semibold text-base mb-1 line-clamp-2">
+                Judul Artikel Blog Kamu
+              </h3>
+              <p class="text-sm text-gray-600 mb-3 line-clamp-2">
+                Cuplikan singkat isi artikel blog agar pembaca tertarik.
+              </p>
+
+              <a
+                href="blog1.html"
+                class="block w-full text-center py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-sm"
+              >
+                Baca Selengkapnya
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD BLOG 2 -->
+          <div
+            class="flex-none w-[220px] bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition"
+          >
+            <div class="h-36">
+              <img
+                src="img/slideshow.png"
+                alt="Blog Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="p-3">
+              <h3 class="font-semibold text-base mb-1 line-clamp-2">
+                Artikel Teknologi Terupdate 2025
+              </h3>
+              <p class="text-sm text-gray-600 mb-3 line-clamp-2">
+                Rangkuman update teknologi terbaru yang wajib kamu baca.
+              </p>
+
+              <a
+                href="blog2.html"
+                class="block w-full text-center py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-sm"
+              >
+                Baca Selengkapnya
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD BLOG 3 -->
+          <div
+            class="flex-none w-[220px] bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition"
+          >
+            <div class="h-36">
+              <img
+                src="img/aboutme.jpeg"
+                alt="Blog Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="p-3">
+              <h3 class="font-semibold text-base mb-1 line-clamp-2">
+                Kelebihan dan Kekurangan Smartphone Baru
+              </h3>
+              <p class="text-sm text-gray-600 mb-3 line-clamp-2">
+                Penjelasan singkat tentang kekurangan & kelebihan gadget
+                terbaru.
+              </p>
+
+              <a
+                href="blog3.html"
+                class="block w-full text-center py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-sm"
+              >
+                Baca Selengkapnya
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section class="w-full px-6 py-16 lg:px-24 bg-gray-50 mt-5" id="about">
+        <div class="max-w-5xl mx-auto">
+          <!-- Heading -->
+          <div class="text-center mb-12">
+            <h1 class="text-3xl font-bold text-gray-800 mb-3">
+              Tentang <br />INFO SMART
+            </h1>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              Platform informasi teknologi yang menyajikan spesifikasi, berita
+              terbaru, review objektif, dan hal-hal penting seputar dunia
+              gadget.
+            </p>
+          </div>
+
+          <!-- Content Wrapper -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <!-- Left Image -->
+            <div class="w-full rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src="img/aboutme.jpeg"
+                alt="Tech Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <!-- Right Text -->
+            <div>
+              <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+                Apa Itu Info Smart?
+              </h2>
+              <p
+                class="text-gray-600 [text-align:justify] leading-relaxed mb-4"
+              >
+                Info Smart adalah website yang berfokus pada dunia teknologi
+                modern. Kami memberikan informasi lengkap seperti spesifikasi
+                smartphone, laptop, smartwatch, serta berbagai perangkat terbaru
+                yang sedang menjadi sorotan.
+              </p>
+
+              <p
+                class="text-gray-600 [text-align:justify] leading-relaxed mb-4"
+              >
+                Selain itu, kami juga menyajikan update teknologi terkini,
+                analisis mendalam, hingga ulasan kelebihan dan kekurangan sebuah
+                perangkat agar pembaca dapat membuat keputusan yang tepat
+                sebelum membeli.
+              </p>
+
+              <p class="text-gray-600 [text-align:justify] leading-relaxed">
+                Dengan penyampaian yang mudah dipahami dan tampilan yang nyaman
+                dibaca, Info Smart hadir sebagai sumber referensi terpercaya
+                bagi semua pecinta teknologi.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cards Section -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+            <div
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition hover:scale-105"
+            >
+              <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">
+                Spesifikasi Lengkap
+              </h3>
+              <p class="text-gray-600 [text-align:justify]">
+                Penyajian data spesifikasi perangkat yang detail, jelas, dan
+                mudah dipahami tanpa istilah yang membingungkan.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition hover:scale-105"
+            >
+              <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">
+                Info Teknologi Terbaru
+              </h3>
+              <p class="text-gray-600 [text-align:justify]">
+                Update berita teknologi terkini yang selalu diperbarui setiap
+                hari agar pembaca tidak ketinggalan perkembangan terbaru.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition hover:scale-105"
+            >
+              <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">
+                Review Objektif
+              </h3>
+              <p class="text-gray-600 [text-align:justify]">
+                Ulasan jujur mengenai kelebihan dan kekurangan gadget sehingga
+                pembaca bisa menilai dengan lebih tepat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact -->
+      <section
+        id="contact"
+        class="flex flex-col items-center py-16 bg-white rounded-2xl drop-shadow-lg max-w-3xl mx-auto px-6 mt-12"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp Logo"
+          class="w-20 h-20 mb-6"
+        />
+        <h3 class="text-2xl font-semibold mb-4 text-gray-800 text-center">
+          Chat Langsung via WhatsApp
+        </h3>
+        <p class="text-gray-600 mb-8 text-center max-w-md">
+          Klik tombol di bawah ini untuk mengirim pesan langsung ke WhatsApp
+          kami. Kami siap membantu kamu 😄
+        </p>
+
+        <a
+          href="https://wa.me/6285863433655?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20sesuatu...."
+          target="_blank"
+          class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-medium px-6 py-3 rounded-full text-lg transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 11.5A8.38 8.38 0 0112.5 20a8.38 8.38 0 01-3.88-.97l-4.12 1.1 1.1-4.12A8.38 8.38 0 014 11.5 8.5 8.5 0 1112.5 3a8.5 8.5 0 018.5 8.5z"
+            />
+          </svg>
+          Hubungi via WhatsApp
+        </a>
+      </section>
+      <section
+        id="privacy-policy"
+        class="my-10 w-full flex justify-center items-center"
+      >
+        <div class="">
+          <button
+            onclick="location.href=`kebijakan-privasi.html`"
+            class="bg-green-500 text-white rounded-xl shadow-xl px-2 py-2 mx-auto hover:scale-105"
+          >
+            Kebijakan Privasi
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="w-full bg-gray-900 text-gray-300 py-10 px-6 lg:px-20 mt-12">
+      <div class="max-w-6xl mx-auto">
+        <!-- Brand -->
+        <div class="text-center mb-6">
+          <h2 class="text-2xl font-bold text-white">Info Smart</h2>
+          <p class="text-gray-400 text-sm mt-2">
+            Sumber informasi teknologi terbaru, spesifikasi lengkap, review
+            objektif, dan berita gadget.
+          </p>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex items-center justify-center gap-6 mt-6">
+          <!-- Facebook -->
+          <a href="" class="text-gray-400 hover:text-white transition">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-7 h-7"
+              fill="currentColor"
+              viewBox="0 0 320 512"
+            >
+              <path
+                d="M279.14 288l14.22-92.66h-88.91V136c0-25.35 12.42-50.06 52.24-50.06H293V6.26S262.43 0 234.29 0c-73.22 0-121.17 44.38-121.17 124.72V195.3H64v92.66h49.12V512h100.2V288z"
+              />
+            </svg>
+          </a>
+
+          <!-- Twitter -->
+          <a href="#" class="text-gray-400 hover:text-white transition">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-7 h-7"
+              fill="currentColor"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558A296.77 296.77 0 0 1 0 408.354a215.732 215.732 0 0 0 25.067 1.294 210.27 210.27 0 0 0 130.29-44.84 105.04 105.04 0 0 1-98.07-72.85 132.4 132.4 0 0 0 19.8 1.7 110.73 110.73 0 0 0 27.61-3.52A105.02 105.02 0 0 1 20.8 184.16v-1.32a105.59 105.59 0 0 0 47.55 13.18A105.05 105.05 0 0 1 35.74 95.36a298.46 298.46 0 0 0 216.4 109.84 118.12 118.12 0 0 1-2.63-24 105.04 105.04 0 0 1 181.41-71.92 208.34 208.34 0 0 0 66.68-25.48 105.27 105.27 0 0 1-46.16 57.82 209.59 209.59 0 0 0 60.48-16.3 226.718 226.718 0 0 1-52.6 54.62z"
+              />
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/r4nn______/"
+            class="text-gray-400 hover:text-white transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-7 h-7"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.056 1.97.24 
+    2.427.403a4.92 4.92 0 0 1 1.75 1.145 4.92 4.92 0 0 1 1.145 
+    1.75c.163.457.347 1.257.403 2.427.058 1.266.07 1.646.07 
+    4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.97-.403 
+    2.427a4.92 4.92 0 0 1-1.145 1.75 4.92 4.92 0 0 
+    1-1.75 1.145c-.457.163-1.257.347-2.427.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.24-2.427-.403a4.92 
+    4.92 0 0 1-1.75-1.145 4.92 4.92 0 0 
+    1-1.145-1.75c-.163-.457-.347-1.257-.403-2.427C2.175 
+    15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.056-1.17.24-1.97.403-2.427A4.92 
+    4.92 0 0 1 3.781 2.973a4.92 4.92 0 0 
+    1 1.75-1.145c.457-.163 1.257-.347 2.427-.403C8.416 
+    2.175 8.796 2.163 12 2.163zm0 3.675a6.162 6.162 0 1 
+    0 6.162 6.162A6.162 6.162 0 0 0 12 5.838zm0 
+    10.15a3.988 3.988 0 1 1 3.988-3.988A3.988 3.988 0 0 1 12 
+    15.988zm6.406-11.845a1.44 1.44 0 1 
+    1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z"
+              />
+            </svg>
+          </a>
+
+          <!-- TikTok -->
+          <a
+            href="https://www.tiktok.com/@selalu_always95"
+            class="text-gray-400 hover:text-white transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-7 h-7"
+              fill="currentColor"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M448,209.78a210.07,210.07,0,0,1-122.77-39.25V339.61a172.39,172.39,0,1,1-148-170.3v74.6a98,98,0,1,0,68.42,93.71V0l80.14.05a122.18,122.18,0,0,0,122.2,122.2Z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Copyright -->
+        <p class="text-center text-gray-400 text-sm mt-8">
+          &copy; 2025 Info Smart.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script>
+      const slider = tns({
+        container: ".my-slider",
+        items: 1,
+        slideBy: "page",
+        autoplay: true,
+        autoplayTimeout: 3500,
+        controls: false,
+        nav: true,
+        autoplayButtonOutput: false,
+        mouseDrag: true,
+        rewind: true,
+      });
+    </script>
+    <script src="data.js"></script>
+  </body>
+</html>

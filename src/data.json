@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "url": "aboutme.jpeg",
+        "title": "Samsung xs",
+        "price": "12.000.000",
+        "link": "/"
+    },
+        {
+        "id": 2,
+        "url": "slideshow.png",
+        "title": "Iphone 15 pro ",
+        "price": "12.000.000",
+        "link": "/"
+    },
+        {
+        "id": 3,
+        "url": "aboutme.jpeg",
+        "title": "Iphone 16 pro max",
+        "price": "12.000.000",
+        "link": "/"
+    },
+        {
+        "id": 4,
+        "url": "slideshow.png",
+        "title": "Oppo s43",
+        "price": "12.000.000",
+        "link": "/"
+    },
+            {
+        "id": 5,
+        "url": "slideshow.png",
+        "title": "lenovo ",
+        "price": "12.000.000",
+        "link": "/"
+    },
+                {
+        "id": 6,
+        "url": "aboutme.jpeg",
+        "title": "Iphone 17 pro max",
+        "price": "12.000.000",
+        "link": "/"
+    },
+                {
+        "id": 7,
+        "url": "slideshow.png",
+        "title": "Iphone 17 pro max",
+        "price": "12.000.000",
+        "link": "/"
+    },
+                {
+        "id": 8,
+        "url": "aboutme.jpeg",
+        "title": "Iphone 17 pro max",
+        "price": "12.000.000",
+        "link": "/"
+    },
+                {
+        "id": 9,
+        "url": "slideshow.png",
+        "title": "Iphone 17 pro max",
+        "price": "12.000.000",
+        "link": "/"
+    },
+                {
+        "id": 10,
+        "url": "aboutme.jpeg",
+        "title": "Iphone 17 pro max",
+        "price": "12.000.000",
+        "link": "/"
+    }
+]
